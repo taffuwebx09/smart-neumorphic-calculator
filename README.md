@@ -97,5 +97,5 @@ smart-neumorphic-calculator/
 
 👨‍💻 Author
 
-**Tafajjul**
+Tafajjul
 ```
