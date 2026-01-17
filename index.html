@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Neumorphic Calculator App</title>
+
+    <link rel="stylesheet" href="css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="light--mode">
+    <!-- HEADER -->
+    <header class="calculator--header">
+      <div class="theme--count">
+        <div class="mode--shift--btn" id="themeBtn">
+          <!-- DARK -->
+          <div class="show--screen active" id="darkScreen">
+            <div class="toggle-circle">
+              <i class="bi bi-moon-fill"></i>
+            </div>
+            <span class="dark--theme-text">DARK MODE</span>
+          </div>
+
+          <!-- LIGHT -->
+          <div class="show--screen" id="lightScreen">
+            <div class="toggle-circle">
+              <i class="bi bi-brightness-high-fill"></i>
+            </div>
+            <span class="light--theme-text">LIGHT MODE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="smart--watch--count">
+        <span class="smart--watch">FR : 13 : 47 : 18</span>
+      </div>
+    </header>
+
+    <!-- APP -->
+    <main class="calculator--app">
+      <!-- Calculator card -->
+      <section class="calculator--body" id="calc">
+        <!-- display -->
+        <div class="display">
+          <div class="display__value" id="displayValue">2122</div>
+          <div class="display__history" id="displayHistory">346+74*24</div>
+        </div>
+
+        <!-- keypad -->
+        <div class="keys">
+          <!-- row 1 -->
+          <button class="key key--fn" data-action="clear">C</button>
+          <button class="key key--fn" data-action="sign">+/−</button>
+          <button class="key key--fn" data-action="percent">%</button>
+          <button class="key key--op" data-action="divide">/</button>
+
+          <!-- row 2 -->
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key key--op" data-action="multiply">×</button>
+
+          <!-- row 3 -->
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key key--op" data-action="minus">−</button>
+
+          <!-- row 4 -->
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key key--op" data-action="plus">+</button>
+
+          <!-- row 5 -->
+          <button class="key" data-value="0">0</button>
+          <button class="key" data-value=".">.</button>
+          <button class="key key--fn" data-action="backspace">⌫</button>
+          <button class="key key--eq" data-action="equals">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/header-controls.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
